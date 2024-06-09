@@ -1,0 +1,114 @@
+\begin{table}[H]
+  \centering
+  \caption*{SentiRuEval-2016 :: искажение 1 слова}
+  {\renewcommand{\arraystretch}{1.5}
+  {\fontsize{11pt}{10pt}\selectfont
+  \begin{tabularx}{0.6\textwidth}{|l|X|X|}
+    \hline
+     method    & del\_word\_banks & del\_word\_telecoms \\
+    \hline
+     & AR/BU/DU & AR/BU/DU \\
+    \hline
+     alti      & 15/\textbf{0.93}/0.85 & 13/\textbf{0.94}/0.9 \\
+    \hline
+     attention & 12/0.95/0.85 & 11/0.95/0.9 \\
+    \hline
+     gradient  & 16/0.95/0.85 & 14/0.96/0.89 \\
+    \hline
+     lime      & \textbf{22}/0.95/\textbf{0.84} & \textbf{21}/0.96/\textbf{0.88} \\
+    \hline
+     shap      & 11/0.96/\textbf{0.84} & 10/0.97/0.89 \\
+    \hline
+     loss      & 20/0.95/\textbf{0.84} & \textbf{21}/0.96/0.89 \\
+    \hline
+     random    & 9/0.98/0.89 & 8/0.98/0.93 \\
+    \hline
+    \end{tabularx}
+    }
+    }
+\end{table}
+
+\begin{table}[H]
+  \centering
+  \caption*{Время работы методов}
+  {\renewcommand{\arraystretch}{1.5}
+  {\fontsize{11pt}{10pt}\selectfont
+  \begin{tabularx}{0.3\textwidth}{|l|X|}
+    \hline
+     method    & time (сек) \\
+    \hline
+     alti      & 0.11 \\
+    \hline
+     attention & 0.007 \\
+    \hline
+     gradient  & 0.046 \\
+    \hline
+     lime      & 0.23 \\
+    \hline
+     shap      & 0.08 \\
+    \hline
+     loss      & 0.04 \\
+    \hline
+    \end{tabularx}
+    }
+    }
+\end{table}
+
+\begin{table}
+  \centering
+  \caption*{SentiRuEval-2016-banks :: искажение 1 слова}
+  {\renewcommand{\arraystretch}{1.5}
+  {\fontsize{11pt}{10pt}\selectfont
+  \begin{tabularx}{1.1\textwidth}{|l|X|X|X|X|X|X|}
+    \hline
+     method  & sub\_fst  & sub\_snd & ins\_fst  & ins\_snd & del\_fst  & del\_snd \\
+    \hline
+     & AR/BU/DU & AR/BU/DU & AR/BU/DU & AR/BU/DU & AR/BU/DU & AR/BU/DU \\
+    \hline
+     alti      & 12/0.95/0.84 & 12/0.95/0.84 & 12/0.95/0.84 & 12/0.95/0.84 & 10/0.96/0.84 & 10/0.95/0.84 \\
+    \hline
+     attention & 9/0.97/0.84  & 8/0.97/0.84 & 9/0.97/0.84  & 9/0.97/0.84 & 8/0.97/0.84  & 8/0.97/0.84 \\
+    \hline
+     gradient  & 12/0.96/0.84 & 13/0.96/0.84 & 11/0.96/0.84 & 11/0.96/0.84 & 11/0.97/0.84 & 11/0.97/0.85 \\
+    \hline
+     lime      & 15/0.96/0.84 & 15/0.96/0.84 & 13/0.96/0.84 & 13/0.96/0.84 & 13/0.96/0.84 & 14/0.96/0.84 \\
+    \hline
+     loss      & 14/0.96/0.85 & 14/0.96/0.84 & 14/0.96/0.84 & 14/0.96/0.84 & 13/0.96/0.84 & 13/0.96/0.84 \\
+    \hline
+     shap      & 11/0.96/0.83 & 11/0.96/0.83 & 11/0.96/0.83 & 11/0.96/0.83 & 9/0.97/0.83  & 9/0.97/0.83 \\
+    \hline
+    \end{tabularx}
+    }
+    }
+\end{table}
+
+
+\begin{table}[H]
+  \centering
+  \caption*{SentiRuEval-2016-banks :: искажение 1 слова}
+  {\renewcommand{\arraystretch}{1.5}
+  {\fontsize{11pt}{10pt}\selectfont
+  \begin{tabularx}{0.85\textwidth}{|l|X|X|X|X|X|}
+    \hline
+     method    & ins\_char         & del\_char         & sub\_char         & sub\_word         \\
+    \hline
+     & AR/BU/DU  & AR/BU/DU  & AR/BU/DU  & AR/BU/DU \\
+    \hline
+     alti      & 12/\textbf{0.95}/0.84 & 10/\textbf{0.96}/0.84 & 12/\textbf{0.95}/0.84 & 15/\textbf{0.9}/0.85 \\
+    \hline
+     attention & 9/0.97/0.84  & 8/0.97/0.84  & 8/0.97/0.84  & 12/0.94/0.85 \\
+    \hline
+     gradient  & 11/0.96/0.84 & 11/0.97/0.84 & 12/0.96/0.84 & 15/0.94/\textbf{0.83} \\
+    \hline
+     lime      & 13/0.96/0.84 & \textbf{13}/\textbf{0.96}/0.84 & \textbf{15}/0.96/0.84 & 15/0.94/\textbf{0.83} \\
+    \hline
+     shap      & 11/0.96/\textbf{0.83} & 9/0.97/\textbf{0.83}  & 11/0.96/\textbf{0.83} & 12/0.95/0.84 \\
+    \hline
+     loss      & \textbf{14}/0.96/0.84 & \textbf{13}/\textbf{0.96}/0.84 & 14/0.96/0.84 & \textbf{17}/0.94/0.84 \\
+    \hline
+     random    & 7/0.97/0.89  & 7/0.97/0.89  & 6/0.98/0.91  & 10/0.96/0.89 \\
+    \hline
+    \end{tabularx}
+    }
+    }
+\end{table}
